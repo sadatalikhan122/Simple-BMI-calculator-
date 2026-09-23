@@ -1,0 +1,35 @@
+print("                                                           welcome to calculate Body mass Index")
+print("""
+|
+|
+|
+-------------------------------------------
+| ------------
+| |  .     .  |
+| |   ____    |
+| ------------
+|       |
+|  ---- | ----
+|       |
+|       |
+|       |
+|      / \\
+|     /   \\
+|    /     \\
+| -------------------
+""")
+
+height=int(input("Enter  you height:"))
+weight=int(input("Enter  you weight:"))
+height=height/100
+result=weight/(height**2)
+
+print(f"your Body Mass index Is =={result}")
+if result<18.5:
+   print("\033[91m                         Underweight\033[0m")
+elif 18.5<=result<=24.9:
+    print("\033[92m                        Congratulation you are healhty \033[0m")
+elif 25.0 <= result <=29.9:
+    print("\033[93m                        You Are Unhealhty \033[0m")
+elif result>30.0: 
+    print("\033[94m                        You Are In Risk Of Health Condition\033[0m")   
